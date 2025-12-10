@@ -13,7 +13,7 @@
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
-	if (tree == NULL || func == NULL) /*verifie si l'arbre et la func sont valides*/
+	if (tree == NULL || func == NULL)
 		return;
 
 	binary_tree_postorder(tree->left, func); /*parcourt le sous-arbre gauche*/
